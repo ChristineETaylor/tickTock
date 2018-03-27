@@ -1,13 +1,24 @@
 
 function clock() {
-  const now = new Date();
-  const seconds = now.getSeconds();
-  const minutes = now.getMinutes();
-  const hours = now.getHours();
+  let now = new Date();
+  let seconds = now.getSeconds();
+  let minutes = now.getMinutes();
+  var ampm = 'am';
+  
+  let hours = function () {
+    let displayHours = now.getHours();
+    if (displayHours > 12) {
+      displayHours -=12
+    }
+    return displayHours;
+  }
 
-  document.querySelector('.hours').innerHTML = hours;
+  if (now.getHours() > 12) ampm = 'pm'; 
+
+  document.querySelector('.hours').innerHTML = hours();
   document.querySelector('.minutes').innerHTML = minutes;
   document.querySelector('.seconds').innerHTML = seconds;
+  document.querySelector('.ampm').innerHTML = ampm;
 
 }
 

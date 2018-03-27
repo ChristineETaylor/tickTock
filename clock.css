@@ -1,16 +1,31 @@
 body {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 70px;
 }
 
+#clock {
+  margin: 0 auto;
+  width: 200px;
+  background-color: blueviolet;
+  color: white;
+}
 
 .hours {
   font-size: 100px;
+  display: inline;
 }
 
 .minutes {
   font-size: 50px;
+  display: inline;
 }
 
 .seconds {
   font-size: 25px;
+  display: inline;
+}
+
+.ampm {
+  font-size: 25px;
+  display: inline;
 }
