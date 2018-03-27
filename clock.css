@@ -1,17 +1,21 @@
 body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   margin: 70px;
+  background-image: url('https://www.publicdomainpictures.net/pictures/130000/velka/turquoise-rock-wall-background.jpg')
 }
 
 #clock {
   margin: 0 auto;
-  width: 200px;
-  background-color: blueviolet;
+  padding: 10px;
+  width: 225px;
+  background-color: goldenrod;
   color: white;
+  border: 10px solid black;
+  border-radius: 20px;
 }
 
 .hours {
-  font-size: 100px;
+  font-size: 50px;
   display: inline;
 }
 
@@ -21,7 +25,7 @@ body {
 }
 
 .seconds {
-  font-size: 25px;
+  font-size: 50px;
   display: inline;
 }
 
