@@ -10,7 +10,7 @@ body {
   width: 225px;
   background-color: goldenrod;
   color: white;
-  border: 3px solid black;
+  border: 3px solid white;
   border-radius: 40px;
   text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 }
