@@ -3,7 +3,7 @@ function clock() {
   let now = new Date();
   let seconds = now.getSeconds();
   let minutes = now.getMinutes();
-  var ampm = 'AM';
+  let ampm = 'AM';
   
   let hours = function () {
     let displayHours = now.getHours();
@@ -22,6 +22,11 @@ function clock() {
   document.querySelector('.minutes').innerHTML = minutes;
   document.querySelector('.seconds').innerHTML = seconds;
   document.querySelector('.ampm').innerHTML = ampm;
+
+}
+
+function changeColor() {
+  document.getElementById('clock').style.color = 'red';
 
 }
 
